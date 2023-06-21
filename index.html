@@ -2,9 +2,107 @@
 <html>
 <head>
   <title>页面标题</title>
-  <meta http-equiv="refresh" content="0; url=file:///D:/XingYao/Github/YZXXY010.github.io/Chinese.html">
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .box {
+      width: 400px;
+      height: 220px;
+      background-color: #00e5ff;
+      margin: 0 20px;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+    
+    .box img {
+      max-width: 400px;
+      max-height: 220px;
+      object-fit: cover;
+    }
+
+    .box div {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      padding: 7px;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .box p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: center;
+      flex-grow: 1;
+      margin-right: 10px;
+    }
+    .container + .container {
+      margin-top: 20px;
+    }
+
+    /* 添加链接样式 */
+    .box a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
 </head>
 <body>
-  <p>页面正在跳转...</p>
+  <h1 style="text-align:center;color:#165ffc;margin:0;">世界盒子mod资源站</h1>
+  <h3 style="text-align:center;color:#165ffc;margin:0;">WorldBox Mod</h3>
+  <p style="text-align:right;">
+    <a style="color:#ff0000;">语言 | language</a> 
+    <br>
+    <a href='https://yzxxy010.github.io/index' style="display:inline-block;font-size:80%;">简体中文</a>
+    <br>
+    <a href='https://yzxxy010.github.io/English' style="font-size:80%;">English</a>
+  </p>
+  <div class="container">
+    <div class="box">
+      <a href="https://www.example1.com">
+        <img src="assets\001.jpg" alt="图片1">
+        <div>
+          <p>更多工具</p>
+        </div>
+      </a>
+    </div>
+    <div class="box">
+      <a href="https://www.example2.com">
+        <img src="assets\001.jpg" alt="图片2">
+        <div>
+          <p>玩法拓展</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box">
+      <a href="https://www.example3.com">
+        <img src="assets\001.jpg" alt="图片3">
+        <div>
+          <p>原版优化</p>
+        </div>
+      </a>
+    </div>
+    <div class="box">
+      <a href="https://www.example4.com">
+        <img src="assets\001.jpg" alt="图片4">
+        <div>
+          <p>国内模组</p>
+        </div>
+      </a>
+    </div>
+  </div>
 </body>
 </html>
